@@ -41,9 +41,10 @@ def setup_logging():
 
 
 def log_in():
+    secrets = Secrets().get_secret('salessite')
     browser.wait_until_element_is_visible('id:username')
-    browser.input_text('id:username', 'maria')
-    browser.input_text('id:password', 'thoushallnotpass')
+    browser.input_text('id:username', secrets['username'])
+    browser.input_text('id:password', secrets['password'])
     browser.submit_form()
     browser.wait_until_page_contains_element('id:sales-form')
 
