@@ -15,10 +15,10 @@ Output folder is in the `.gitignore` and thus not visible in this repository.
 
 ### RPA Framework libraries used in `downloadTask`
 
-- RPA.HTTP
 - RPA.Excel.Files
-- RPA.Robocloud.Items
 - RPA.FileSystem
+- RPA.HTTP
+- RPA.Robocloud.Items
 
 ### RPA Framework libraries used in `processingTask`
 
