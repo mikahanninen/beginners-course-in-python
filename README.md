@@ -10,6 +10,9 @@ content and goes through each item in the list variable.
 
 The `processingTask` is run by default in _headless_ mode, but UI can be set visible by setting environment variable `SHOW_UI` to any value.
 
+The main process output is stored into `output/sales.zip` file, which contains all images and PDFs created during the `processingTask` step.
+Output folder is in the `.gitignore` and thus not visible in this repository.
+
 ## To run in development
 
 These steps describe how to use Robocorp Cloud Vault and
