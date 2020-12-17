@@ -1,5 +1,7 @@
 # Beginner's Course implemented in Python
 
+https://robocorp.com/docs/courses/beginners-course
+
 ## Process description
 
 Process is split into 2 steps. First step, `downloadTask`, downloads Excel file which is read and
