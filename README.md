@@ -45,8 +45,8 @@ Execute the run command: `rcc run -e devdata/env.json -t downloadTask`
 
 ## Running in Visual Studio Code
 
-    1. use terminal and run with rcc like mentioned above
-    2. run using `Robocorp Code` extension
+   1. use terminal and run with rcc like mentioned above
+   2. run using `Robocorp Code` extension
 
 ## Links
 
