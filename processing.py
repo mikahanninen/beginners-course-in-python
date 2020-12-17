@@ -1,4 +1,3 @@
-""" An example robot. """
 from RPA.Archive import Archive
 from RPA.Browser import Browser
 from RPA.PDF import PDF
