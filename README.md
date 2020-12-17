@@ -29,6 +29,11 @@ Output folder is in the `.gitignore` and thus not visible in this repository.
 - RPA.Robocloud.Secrets
 - RPA.Robocloud.Items
 
+## Robocorp Vault
+
+Needs to have secret key `salessite` containing secrets for `username` and `password`
+defined in the Beginner's Course website.
+
 ## To run in development
 
 These steps describe how to use Robocorp Cloud Vault and
