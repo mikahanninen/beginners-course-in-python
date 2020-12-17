@@ -29,9 +29,6 @@ Output folder is in the `.gitignore` and thus not visible in this repository.
 - RPA.Robocloud.Secrets
 - RPA.Robocloud.Items
 
-
-### RPA Framework libraries used in `processingTask`
-
 ## To run in development
 
 These steps describe how to use Robocorp Cloud Vault and
