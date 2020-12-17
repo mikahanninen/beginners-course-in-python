@@ -1,8 +1,12 @@
 tasks:
-  Default:
+  downloadTask:
     command:
       - python
-      - task.py
+      - downloader.py
+  processingTask:
+    command:
+      - python
+      - processing.py
 
 condaConfigFile: conda.yaml
 artifactsDir: output
