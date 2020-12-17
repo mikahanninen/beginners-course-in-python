@@ -13,6 +13,25 @@ The `processingTask` is run by default in _headless_ mode, but UI can be set vis
 The main process output is stored into `output/sales.zip` file, which contains all images and PDFs created during the `processingTask` step.
 Output folder is in the `.gitignore` and thus not visible in this repository.
 
+### RPA Framework libraries used in `downloadTask`
+
+- RPA.HTTP
+- RPA.Excel.Files
+- RPA.Robocloud.Items
+- RPA.FileSystem
+
+### RPA Framework libraries used in `processingTask`
+
+- RPA.Archive
+- RPA.Browser
+- RPA.FileSystem
+- RPA.PDF
+- RPA.Robocloud.Secrets
+- RPA.Robocloud.Items
+
+
+### RPA Framework libraries used in `processingTask`
+
 ## To run in development
 
 These steps describe how to use Robocorp Cloud Vault and
@@ -32,7 +51,7 @@ local workitems file for development runs.
         "RPA_WORKITEMS_ADAPTER": "RPA.Robocloud.Items.FileAdapter",
         "RPA_WORKITEMS_PATH": "./devdata/workitems.json"
     }```
-    
+
 4. replace `MY_WORKSPACE_ID` parts with your ID from output from command: `rcc cloud workspace`
 5. replace `MY_AUTH_TOKEN` with output from command: `rcc cloud authorize -w <MY_WORKSPACE_ID>`
 
