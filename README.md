@@ -34,7 +34,7 @@ Output folder is in the `.gitignore` and thus not visible in this repository.
 These steps describe how to use Robocorp Cloud Vault and
 local workitems file for development runs.
 
-**Note. This is not necessary if process is run only in the Cloud.**
+**Note. These steps are not necessary if process is run only in the Cloud.**
 
 1. create folder `devdata` into task root folder (this folder is in `.gitignore` file)
 2. create empty `workitems.json` file into `devdata` folder
