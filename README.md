@@ -71,7 +71,8 @@ Execute the run command: `rcc run -e devdata/env.json -t downloadTask`
 
    1. use terminal and run with rcc like mentioned above
    2. run using `Robocorp Code` extension
-
+   3. run using VS Code command palette `Robocorp: Run Robot`
+   
 ## Links
 
 https://forum.robocorp.com/t/is-it-possible-to-have-a-locally-run-robot-fetch-secrets-from-robocorp-cloud-vault/297
