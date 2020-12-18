@@ -83,14 +83,14 @@ Execute the run commands:
 - `rcc run -e devdata/env.json -t downloadTask` for the first step
 - `rcc run -e devdata/env.json -t processingTask` for the second step
 
-## Running in Robocorp Lab
-
-1.  in Lab terminal - execute the run command: `rcc run -t downloadTask` and then `rcc run -t processingTask`
-2.  using notebook mode: click on the `>>` button, which executes `Restart Kernel and Run All Cells`
-3.  click on the `Run Robot` button and select the step you want to run
-
 ## Running in Visual Studio Code
 
-1.  use terminal and run with rcc like mentioned above
-2.  run using `Robocorp Code` extension
-3.  run using VS Code command palette `Robocorp: Run Robot`, and select the step you want to run
+You can run this robot easily usign the [Robocorp VS Code extension]: https://robocorp.com/docs/product-manuals/robocorp-code#running-the-robot
+
+## Running in Robocorp Lab
+
+You have three different options:
+
+- using notebook mode: click on the `>>` button, which executes `Restart Kernel and Run All Cells`
+- click on the `Run Robot` button and select the step you want to run
+- in Lab terminal: execute the run command: `rcc run -t downloadTask` and then `rcc run -t processingTask`
