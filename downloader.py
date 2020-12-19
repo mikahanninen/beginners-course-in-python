@@ -1,13 +1,22 @@
+"""
+Producer step actions for the example robot.
+"""
 from RPA.HTTP import HTTP
 from RPA.Excel.Files import Files
 from RPA.Robocloud.Items import Items
 from RPA.FileSystem import FileSystem
 
-""" variables """
+
 http = HTTP()
 excel = Files()
 workitems = Items()
 files = FileSystem()
+
+
+def main():
+    """Robot workflow actions."""
+    download_excel_file()
+    read_data_from_excel()
 
 
 def download_excel_file():
@@ -25,5 +34,4 @@ def read_data_from_excel():
 
 
 if __name__ == "__main__":
-    download_excel_file()
-    read_data_from_excel()
+    main()

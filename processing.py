@@ -1,3 +1,12 @@
+"""
+Consumer step actions for the example robot.
+"""
+import logging
+import os
+from pathlib import Path
+import shutil
+import sys
+
 from RPA.Archive import Archive
 from RPA.Browser import Browser
 from RPA.FileSystem import FileSystem
@@ -5,13 +14,7 @@ from RPA.PDF import PDF
 from RPA.Robocloud.Secrets import Secrets
 from RPA.Robocloud.Items import Items
 
-import logging
-import os
-from pathlib import Path
-import shutil
-import sys
 
-""" variables """
 archive = Archive()
 browser = Browser()
 pdf = PDF()
@@ -22,6 +25,24 @@ files = FileSystem()
 output_dir = Path(".") / "output"
 image_dir = output_dir / "images"
 pdf_dir = output_dir / "pdfs"
+
+
+def main():
+    """Robot workflow actions."""
+    all_steps_done = False
+    try:
+        clear_previous_run()  # this can be skipped
+        open_page()
+        log_in()
+        loop_persons()
+        collect_the_results()
+        export_sales_as_pdf()
+        log_out_and_close_browser()
+        zip_results()
+        all_steps_done = True
+    finally:
+        print(f"Run result: {all_steps_done}")
+        close_page()
 
 
 def setup_logging():
@@ -72,9 +93,9 @@ def fill_in_one_person(person):
 
 def loop_persons():
     workitems.load_work_item_from_environment()
-    vars = workitems.get_work_item_variables()
+    variables = workitems.get_work_item_variables()
 
-    for person in vars["persons"]:
+    for person in variables["persons"]:
         fill_in_one_person(person)
 
 
@@ -113,17 +134,4 @@ def clear_previous_run():
 
 
 if __name__ == "__main__":
-    all_steps_done = False
-    try:
-        clear_previous_run()  # this can be skipped
-        open_page()
-        log_in()
-        loop_persons()
-        collect_the_results()
-        export_sales_as_pdf()
-        log_out_and_close_browser()
-        zip_results()
-        all_steps_done = True
-    finally:
-        print(f"Run result: {all_steps_done}")
-        close_page()
+    main()
